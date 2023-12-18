@@ -8,6 +8,7 @@ p,
 h2,
 h3,
 h4 {
+	font-family: Poppins;
 	color: #fff;
 }
 
@@ -381,4 +382,13 @@ h2,
 
 .ne-content p a{
 	color: #2f7e76;
+}
+
+.news{
+	margin: 0 0 90px;
+}
+
+.ne-content h3 a:visited{
+	color: rgb(42, 42, 42);
+
 }
