@@ -247,21 +247,22 @@ h2,
 }
 
 /* footer section */
-.footer {
+.footers{
 	background-color: #0a3459;
 	width: 100%;
-	padding: 30px;
-	margin: auto;
+	padding: auto 20%;
+	text-align: center;
 }
 
 .holder{
 	width: 100%;
-	 
+	align-content: space-between;
 }
 
 .ft {
 	display: inline-block;
-	margin: auto 50px auto 30px;
+	margin: auto 153px auto 30px;
+
 	align-content: space-between;
 	line-height: 40px;
 	text-align: left;
@@ -271,12 +272,11 @@ h2,
 	color: #05f2db;
 }
 
-.footer {
+
+#main-footer footer{
 	color: #fff;
-	width: 100%;
-	text-align: center;
-	padding-right: 40px;
 }
+
 
 .social-address{
 	width: 20px;
@@ -309,14 +309,14 @@ h2,
 .re-content {
 	margin: auto;
 	display: inline-block;
-	margin: 15px;
-	padding: 10px;
+	margin: 10px;
+	padding: 5px;
 }
 
 .re-content p {
 	margin: auto;
 	display: inline-block;
-	margin: 15px;
+	margin: 10px;
 	padding: 10px;
 }
 
