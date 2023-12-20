@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-family:  Poppins, Arial, Helvetica, sans-serif;
+	font-family: Poppins, Arial, Helvetica, sans-serif;
 	/* overflow: hidden; */
 }
 
@@ -25,11 +25,17 @@ h4 {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
+	position: relative;
 }
 
 .topnav a:hover {
-	text-decoration: underline;
+	
+	/* text-decoration: underline; */
+	border-bottom: 2px solid #fff;
+	/* transform: scaleX(0); */
+	transform: transform 0.3s ease;
 }
+
 
 .topnav .icon {
 	display: none;
@@ -93,20 +99,20 @@ h4.line-1 {
 	text-align: left;
 	white-space: nowrap;
 	overflow: hidden;
-	transform: translateX(-69%);
+	transform: translateX(-60%);
 }
 
 /* Animation */
 .anim-typewriter {
-	animation: typewriter 4s steps(44) 1s 1 normal both,
-		blinkTextCursor 500ms steps(44) infinite normal;
+	animation: typewriter 4s steps(40) 1s 1 normal both,
+		blinkTextCursor 500ms steps(40) infinite normal;
 }
 @keyframes typewriter {
 	from {
 		width: 0;
 	}
 	to {
-		width: 27em;
+		width: 30em;
 	}
 }
 @keyframes blinkTextCursor {
@@ -159,6 +165,11 @@ h2,
 	margin: 15px;
 }
 
+.card:hover{
+	transition: transform .6s;
+	transform: scale(1.1)
+}
+
 .card img {
 	border-radius: 5%;
 }
@@ -172,15 +183,16 @@ h2,
 	padding-bottom: 100px;
 }
 
-.faq1{
+.faq1 {
 	width: 20%;
 }
 
-.faq2{
+.faq2 {
 	width: 60%;
 }
 
-.faqs {	display: inline-block;
+.faqs {
+	display: inline-block;
 	padding: 59px;
 }
 .accordion {
@@ -207,18 +219,15 @@ h2,
 	font-size: 20px;
 }
 
-
-.active img{
+.active img {
 	float: left !important;
 	width: 100px;
 	height: inherit;
 }
-#logo{
+#logo {
 	float: left;
 	padding-left: 50px;
 }
-
-
 
 .active,
 .accordion:hover {
@@ -246,45 +255,6 @@ h2,
 	transition: max-height 0.2s ease-out;
 }
 
-/* footer section */
-.footers{
-	background-color: #0a3459;
-	width: 100%;
-	padding: auto 20%;
-	text-align: center;
-}
-
-.holder{
-	width: 100%;
-	align-content: space-between;
-}
-
-.ft {
-	display: inline-block;
-	margin: auto 153px auto 30px;
-
-	align-content: space-between;
-	line-height: 40px;
-	text-align: left;
-}
-
-.ft p a {
-	color: #05f2db;
-}
-
-
-#main-footer footer{
-	color: #fff;
-}
-
-
-.social-address{
-	width: 20px;
-	padding: 3px;
-	justify-content: space-between;
-}
-
-
 /* resources section */
 .resource-top-section {
 	width: 100%;
@@ -296,14 +266,14 @@ h2,
 	text-align: center;
 }
 
-.resource-heading{
-		position: absolute;
-		top: 40%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		padding: 0 200px;
-		font-size: 2rem;
-		font-weight: 500;
+.resource-heading {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 200px;
+	font-size: 2rem;
+	font-weight: 500;
 }
 
 .re-content {
@@ -326,13 +296,13 @@ h2,
 	box-shadow: 1px 1px 10px #444;
 }
 
-.re-link a{
+.re-link a {
 	color: #2f7e76;
 	font-weight: 750;
 	line-height: 2;
 }
 
-.re-link{
+.re-link {
 	font-size: 1rem;
 }
 
@@ -340,13 +310,12 @@ h2,
 	margin-top: -100px;
 }
 
-
-.content2{
+.content2 {
 	top: 4px;
 }
 
 /* Styling for news section */
-.news-heading{
+.news-heading {
 	display: inline-block;
 	width: 40%;
 	padding: 5px 0;
@@ -356,39 +325,137 @@ h2,
 	font-size: 1.5rem;
 }
 
-.news-heading h5{
+.news-heading h5 {
 	text-align: center;
 	padding-left: 100px;
 }
 
-.ne-content{
+.ne-content {
 	width: 45%;
 	margin: auto auto auto 60px;
 	display: inline-block;
 }
 
-.ne-content p{
+.ne-content p {
 	color: rgb(78, 76, 76);
 	font-size: large;
-
 }
 
 .ne-content h3 {
-	font-family: 'Poppins';
+	font-family: "Poppins";
 	color: rgb(42, 42, 42);
 	font-size: 2rem;
 	font-weight: 500;
 }
 
-.ne-content p a{
+.ne-content p a {
 	color: #2f7e76;
 }
 
-.news{
+.news {
 	margin: 0 0 90px;
 }
 
-.ne-content h3 a:visited{
+.ne-content h3 a:visited {
 	color: rgb(42, 42, 42);
+}
+
+/* section for the service page */
+.service-body {
+	background-color: rgb(230, 230, 230);
+}
+
+.service-top {
+	background-color: #0a3459;
+	padding: 50px;
+}
+
+.service-top-content {
+	font-family: "Poppins";
+	width: 48%;
+	display: inline-block;
+	padding: 0 11px;
+}
+
+.service-top-content h2 {
+	font-size: 50px;
+	line-height: 2;
+}
+
+.service-top-content p {
+	line-height: 2;
+}
+
+.service-card-container {
+	width: 97%;
+	margin-left: 30px;
+}
+
+.service-card {
+	background-color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 390px;
+	margin: 20px;
+	text-align: center;
+	font-family: arial;
+	border-radius: 20px;
+	display: inline-block;
+}
+
+.service-card img {
+	width: 80%;
+	margin: 35px;
+}
+
+.service-card h3 {
+	color: #000;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+/* footer section */
+.footers {
+	background-color: #0a3459;
+	width: 100%;
+	margin-top: 100px;
+	padding: auto 20%;
+	text-align: center;
+}
+
+.holder {
+	width: 100%;
+	align-content: space-between;
+}
+
+.ft {
+	display: inline-block;
+	margin: auto 153px auto 30px;
+
+	align-content: space-between;
+	line-height: 40px;
+	text-align: left;
+}
+
+.ft p a {
+	color: #05f2db;
+}
+
+#main-footer footer {
+	color: #fff;
+}
+
+.social-address {
+	width: 20px;
+	padding: 3px;
+	justify-content: space-between;
+}
+
+button{
+	background-color: #0a3459;
+	color: #fff;
+	border: 2px solid white;
+	padding: 12px 20px;
+	border-radius: 8px;
+	font-size: 16px;
 
 }
